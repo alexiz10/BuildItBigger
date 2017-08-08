@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/activity_jokes_display_padding"
     tools:context=".JokesDisplayActivity">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="@dimen/joke_text_size"
         tools:text="Joke goes here." />
 
 </LinearLayout>
