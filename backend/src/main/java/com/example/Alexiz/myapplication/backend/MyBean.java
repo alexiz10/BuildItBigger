@@ -1,17 +1,15 @@
 package com.example.Alexiz.myapplication.backend;
 
-/**
- * The object model for the data we are sending through endpoints
- */
+import com.example.Jokes;
+
 public class MyBean {
 
-    private String myData;
-
-    public String getData() {
-        return myData;
+    public String getJoke() {
+        return Jokes.getJoke();
     }
 
-    public void setData(String data) {
-        myData = data;
+    public String[] getAllJokes() {
+        return Jokes.getJokes();
     }
+
 }
