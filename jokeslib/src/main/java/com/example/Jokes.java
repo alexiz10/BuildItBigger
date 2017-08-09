@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Jokes {
 
-    private static final String[] jokes = new String[] {
+    private final String[] jokes = new String[] {
         "Programmer: A machine that turns coffee into code.",
         "Algorithm: Word used by programmers when they do not want to explain what they did.",
         "Q: What's the object-oriented way to become wealthy? A: Inheritance",
@@ -17,15 +17,11 @@ public class Jokes {
         "An SQL query goes into a bar, walks up to two tables and asks, \"Can I join you?\""
     };
 
-    private Jokes() {
+    public Jokes() {
 
     }
 
-    public static String[] getJokes() {
-        return jokes;
-    }
-
-    public static String getJoke() {
+    public String getJoke() {
         return jokes[new Random().nextInt(jokes.length)];
     }
 

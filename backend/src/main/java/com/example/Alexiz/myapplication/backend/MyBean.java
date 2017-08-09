@@ -1,15 +1,15 @@
 package com.example.Alexiz.myapplication.backend;
 
-import com.example.Jokes;
-
 public class MyBean {
 
-    public String getJoke() {
-        return Jokes.getJoke();
+    private String myData;
+
+    public String getData() {
+        return myData;
     }
 
-    public String[] getAllJokes() {
-        return Jokes.getJokes();
+    public void setData(String data) {
+        myData = data;
     }
 
 }

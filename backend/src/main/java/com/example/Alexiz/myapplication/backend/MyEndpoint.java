@@ -6,6 +6,7 @@
 
 package com.example.Alexiz.myapplication.backend;
 
+import com.example.Jokes;
 import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
@@ -28,7 +29,10 @@ public class MyEndpoint {
      * A simple endpoint method that takes a name and says Hi back
      */
     @ApiMethod(name = "setJoke")
-    public MyBean setJoke(MyBean joke) {
+    public MyBean setJoke() {
+        MyBean joke = new MyBean();
+        joke.setData(new Jokes().getJoke());
+
         return joke;
     }
 
