@@ -14,6 +14,7 @@
         android:layout_gravity="center"
         android:textAlignment="center"
         android:textSize="@dimen/joke_text_size"
+        android:textColor="@android:color/black"
         tools:text="Joke goes here." />
 
 </LinearLayout>
